@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NFC Test Editor"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NFC is waiting..."
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text to write into NFC tag"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/writeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Text and Write to NFC Tag"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/readButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch to Read Mode"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result will appear here."
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+</ScrollView>
